@@ -21,6 +21,18 @@ namespace WuerfelspielTests
 
             Assert.IsInstanceOfType(becher, Becher);
         }
-        [Te
+        [TestMethod]
+        public void Becher_Hat_Wuerfel()
+        {
+            //arrange 
+            int anzahlWuerfel = 1;
+
+            //act
+            Becher becher = new Becher(anzahlWuerfel);
+
+            //assert
+            Assert.AreEqual(becher.Wuerfel.length, anzahlwuerfel);
+
+        }
     }
 }
