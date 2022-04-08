@@ -13,5 +13,18 @@ namespace WuerfelspielTests
             //Act
             Wuerfel wuerfel = new Wuerfel();
         }
+
+        [TestMethod]
+        public void Wuerfel_AnzahlSeitenKannAngegebenWerden()
+        {
+            //Arrange
+            int anzahlSeiten = 12;
+            //Act
+            Wuerfel wuerfel = new Wuerfel(anzahlSeiten);
+            //Assert
+            Assert.AreEqual(anzahlSeiten, wuerfel.AnzahlSeiten);
+
+        }
+
     }
 }

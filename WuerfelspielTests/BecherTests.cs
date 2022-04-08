@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Wuerfelspiel;
 
 namespace WuerfelspielTests
 {
@@ -20,6 +21,7 @@ namespace WuerfelspielTests
             //Assert
 
             Assert.IsInstanceOfType(becher, Becher);
+            
         }
         [TestMethod]
         public void Becher_Hat_Wuerfel()
