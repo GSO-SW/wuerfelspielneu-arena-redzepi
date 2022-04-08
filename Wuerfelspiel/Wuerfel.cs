@@ -9,7 +9,7 @@ namespace Wuerfelspiel
         public int Wuerfeln()
         {
             Random rndZufallZahl = new Random ();
-            return rndZufallZahl.Next(1,anzahlSeiten);
+            return rndZufallZahl.Next(1,anzahlSeiten+1);
             
         }
 
