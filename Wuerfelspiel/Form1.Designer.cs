@@ -30,6 +30,7 @@
         {
             this.btnWuerfeln = new System.Windows.Forms.Button();
             this.lblWuerfel = new System.Windows.Forms.Label();
+            this.ucWuerfel1 = new Wuerfelspiel.UCWuerfel();
             this.SuspendLayout();
             // 
             // btnWuerfeln
@@ -51,12 +52,21 @@
             this.lblWuerfel.TabIndex = 1;
             this.lblWuerfel.Text = "label1";
             // 
+            // ucWuerfel1
+            // 
+            this.ucWuerfel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ucWuerfel1.Location = new System.Drawing.Point(109, 81);
+            this.ucWuerfel1.Name = "ucWuerfel1";
+            this.ucWuerfel1.Size = new System.Drawing.Size(155, 139);
+            this.ucWuerfel1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ucWuerfel1);
             this.Controls.Add(this.lblWuerfel);
             this.Controls.Add(this.btnWuerfeln);
             this.Name = "Form1";
@@ -71,6 +81,7 @@
 
         private System.Windows.Forms.Button btnWuerfeln;
         private System.Windows.Forms.Label lblWuerfel;
+        private UCWuerfel ucWuerfel1;
     }
 }
 
