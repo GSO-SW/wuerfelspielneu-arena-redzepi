@@ -8,11 +8,23 @@ namespace WuerfelspielTests
     public class WuerfelTests
     {
         [TestMethod]
-        public void DummyTest()
+        public void Wuerfel_KannErstelltWerden()
         {
-            // Dieser Test ist hier, um eine GitHub-Funktion zu testen. 
-            // Einfach löschen :)
-            Assert.IsTrue(true);// is tatsächlich true :O
+            //Act
+            Wuerfel wuerfel = new Wuerfel();
         }
+
+        [TestMethod]
+        public void Wuerfel_AnzahlSeitenKannAngegebenWerden()
+        {
+            //Arrange
+            int anzahlSeiten = 12;
+            //Act
+            Wuerfel wuerfel = new Wuerfel(anzahlSeiten);
+            //Assert
+            Assert.AreEqual(anzahlSeiten, wuerfel.AnzahlSeiten);
+
+        }
+
     }
 }
